@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        border: 2px solid black;
+        text-align: center;
+        /* justify-content: center; */
+    }
+</style>
+<body>
+    
+    <script>
+        function check() {
+            var a=parseInt(document.getElementById("n1").value);
+            var b=parseInt(document.getElementById("n2").value);
+            var c=parseInt(document.getElementById("n3").value);
+            var d=parseInt(document.getElementById("n4").value);
+            var e=parseInt(document.getElementById("n5").value);
+            var f=parseInt(document.getElementById("n6").value);
+            var g=parseInt(document.getElementById("n7").value);
+
+            var total=a+b+c+d+e+f+g;
+            var perc=(total*100/350);
+
+            document.getElementById("data").innerHTML="Total Marks ="+total;
+            document.getElementById("datal").innerHTML="Percentage ="+perc+"%";
+        }
+    </script>
+    <div class="box">
+    <h1>Marksheet for Information Tecnology</h1>
+    <h2>Enter Marks</h2>
+    <form>
+        <!-- <div class="row"></div>
+        <div class="tex"></div> -->
+        C Language: <input class="book" type="number" id="n1"><br>
+        C++ Langyage: <input class="book1" type="number" id="n2"><br>
+        Database: <input class="book2" type="number" id="n3"><br>
+        HTML: <input class="book3" type="number" id="n4"><br>
+        CSS: <input class="book4" type="number" id="n5"><br>
+        PHP: <input class="book5" type="number" id="n6"><br>
+        Core Java: <input class="book6" type="number" id="n7"><br>
+        <button type="button" onclick="check()">Result</button>
+
+        <p id="data"></p>
+        <p id="datal"></p>
+    </form>
+</div>
+</body>
+</html>
